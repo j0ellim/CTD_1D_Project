@@ -27,11 +27,11 @@ question1 = input("You wake up and it's a nice windy morning, \n (1)would you li
 if question1 == "1":
    print("you spend $15 on the grab")
    account_balance= account_balance - 15
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 elif question1 == "2":
    print("congrats you saved $15")
    time.sleep(2)
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 else:
    print("Invalid Input, Run again\n")
    exit()
@@ -39,12 +39,12 @@ time.sleep(2)
 question2 = input("Your mother askes you to pack your lunch and take it to school or askes you to use your allowance to buy food, \n (1)make yourself a peanut butter sandwhich,\n (2) or spend money on yummy canteen food\n Type in 1 OR 2")
 if question1 == "1":
    print("Congrats! you saved $4")
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 elif question1 == "2":
    print("you spend $4 on Nasi Lemak")
    time.sleep(2)
    account_balance= account_balance-4
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 else:
    print("Invalid Input, Run again\n")
    exit()
@@ -58,23 +58,23 @@ time.sleep(2)
 if question3 == "1":
    account_balance= account_balance - 100
    print("Individual stocks are lika a gamble. You never know which company will increase flourish and which company will fail. The company you chose to invest in failed. You have lost your $100")
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 elif question3 == "2":
    answer1 = input("The market is down, would you like to remove all of your money from the fund? (y = yes, n = no )")
    if answer1 == "y":
     print("\nETFs might not always produce a profit in the short-run, and it might even incur losses, it is important to be patient and wait till the ,market reaches a profit before you take your money out!")
     account_balance= account_balance/1.5
-    print(account_balance)
+    print('Your account balance is now $'+ str(account_balance))
    elif answer1 == "n":
     print("ETFs might not always produce a profit in the short-run, and it might even incur losses, it is important to be patient and wait till the ,market reaches a profit before you take your money out! Good job on being patient!")
     account_balance = account_balance*2
-    print(account_balance)
+    print('Your account balance is now $'+ str(account_balance))
    else:
     print("Invalid Input, Try again\n")
     game()
 elif question3 == "3":
    time.sleep(2)
-   print(account_balance)
+   print('Your account balance is now $'+ str(account_balance))
 else:
    print("Invalid Input, Run again\n")
    exit()
@@ -139,7 +139,7 @@ if question5 == "1":
        print('Since you have read up more on stocks and experienced a little from stocks,')
        answer6 = input('Do you want to put the money you earned from this job into stocks? \n (1) Invest your pay \n (2) Keep your pay in your account balance')
        if answer6 == '1':
-           print('you have decided to invest your pay consisting of ' + str(pay) + 'into stocks')
+           print('you have decided to invest your pay consisting of ' + str(pay) + ' into stocks')
            p = random.randint(1, 10)
            if p < 5:
                print('Unfortunately, the stocks that you have invested in did not perform well and you have lost 2 times the amount that you put in')
